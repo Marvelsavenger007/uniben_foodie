@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import './checkout.css';
 import { useNavigate } from "react-router-dom";
 import { PaystackButton } from "react-paystack";
+
 
 const Checkout = () => {
   const navigate = useNavigate();
@@ -13,7 +15,7 @@ const Checkout = () => {
   });
 
   // Paystack configuration
-  const publicKey = "your-paystack-public-key"; // Replace with your actual Paystack public key
+  const publicKey = "pk_test_999774c3ffd5de139267f035f7c11c898141e07e"; // Replace with your actual Paystack public key
   const amount = 5000 * 100; // Total in kobo (e.g., 5000 NGN = 5000 * 100)
   const paystackEmail = details.email;
 

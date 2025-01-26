@@ -36,7 +36,7 @@ const Cart = () => {
 
     // Navigate to the checkout page
     const handleCheckout = () => {
-        navigate("uniben-foodie/checkout", { state: { cartItems } });
+        navigate("/uniben-foodie/checkout", { state: { cartItems } });
     };
 
     return (
@@ -55,9 +55,9 @@ const Cart = () => {
                                     <p>Price: ₦{item.price}</p>
                                     <div className="cart-controls">
                                         <div className="quantity-controls">
-                                            <button onClick={() => handleDecrement(index)}>-</button>
+                                            <button onClick={() => handleDecrement(index)} className="red-btn">-</button>
                                             <span>{item.quantity}</span>
-                                            <button onClick={() => handleIncrement(index)}>+</button>
+                                            <button onClick={() => handleIncrement(index)} className="green-btn">+</button>
                                         </div>
                                         <button
                                             className="remove-item-button"

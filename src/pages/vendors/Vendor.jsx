@@ -112,7 +112,7 @@ const Vendor = () => {
     };
 
     const handleViewCart = () => {
-        navigate("uniben-foodie/cart", { state: { cart } });
+        navigate("/uniben-foodie/cart", { state: { cart } });
     };
 
     return (

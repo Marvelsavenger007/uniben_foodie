@@ -141,3 +141,12 @@
   align-items: center;
   padding: 50px 0;
 }
+
+
+.red-btn{
+  background-color: red;
+}
+
+.green-btn{
+  background-color: green;
+}
