@@ -30,7 +30,7 @@ const Checkout = () => {
   const handleConfirmOrder = () => {
     if (paymentOption === "cash") {
       alert("Order confirmed! Pay on delivery.");
-      navigate("/");
+      navigate("/uniben-foodie/home");
     }
   };
 
@@ -45,7 +45,7 @@ const Checkout = () => {
     text: "Pay with Paystack",
     onSuccess: () => {
       alert("Payment successful! Your order has been placed.");
-      navigate("/");
+      navigate("/uniben-foodie/home");
     },
     onClose: () => alert("Payment canceled."),
   };
