@@ -36,7 +36,7 @@ const Cart = () => {
 
     // Navigate to the checkout page
     const handleCheckout = () => {
-        navigate("/uniben-foodie/checkout", { state: { cartItems } });
+        navigate("/checkout", { state: { cartItems } });
     };
 
     return (

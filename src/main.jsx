@@ -17,8 +17,8 @@ createRoot(document.getElementById('root')).render(
     <CartProvider>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Login />} />
-          <Route path="uniben-foodie" element={<App />}>
+        <Route path="" element={<Login />} />
+          <Route path="/" element={<App />}>
             <Route path="profile" element={<Profile />}></Route>
             <Route path='vendors' element={<Vendor />}></Route>
             <Route path="cart" element={<Cart />}></Route>

@@ -14,9 +14,9 @@ const Checkout = () => {
     email: "",
   });
 
-  // Paystack configuration
-  const publicKey = "pk_test_999774c3ffd5de139267f035f7c11c898141e07e"; // Replace with your actual Paystack public key
-  const amount = 5000 * 100; // Total in kobo (e.g., 5000 NGN = 5000 * 100)
+  
+  const publicKey = "pk_test_999774c3ffd5de139267f035f7c11c898141e07e"; 
+  const amount = 5000 * 100; 
   const paystackEmail = details.email;
 
   const handleInputChange = (e) => {
@@ -30,7 +30,7 @@ const Checkout = () => {
   const handleConfirmOrder = () => {
     if (paymentOption === "cash") {
       alert("Order confirmed! Pay on delivery.");
-      navigate("/uniben-foodie/home");
+      navigate("/home");
     }
   };
 
@@ -45,7 +45,7 @@ const Checkout = () => {
     text: "Pay with Paystack",
     onSuccess: () => {
       alert("Payment successful! Your order has been placed.");
-      navigate("/uniben-foodie/home");
+      navigate("/home");
     },
     onClose: () => alert("Payment canceled."),
   };

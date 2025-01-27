@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import "./profile.css"
-import avatar from "../../images/avatar.png";
+import avatar from "../../images/profile.jpg";
 
 
 const Profile = () => {
     const [isEditing, setIsEditing] = useState(false);
     const [profileData, setProfileData] = useState({
         profilePicture: avatar,
-        name: "Daniel Irabor",
-        email: "dannyirabor@gmail.com",
+        name: "David Irabor",
+        email: "blessedirabor04@gmail.com",
         homeAddress: "46 GRA Benin city, Edo State",
         sex: "Male",
-        dob: "2000-06-11",
-        phone: "+234-802-345-6789",      
+        dob: "2003-10-30",
+        phone: "+234-815-691-6112",
         password: "********",
     });
 

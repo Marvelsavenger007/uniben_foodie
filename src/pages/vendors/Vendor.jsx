@@ -18,6 +18,7 @@ import puffpuff from "../../images/puffpuff.webp";
 import nuggets from "../../images/nuggets.webp";
 import shawarma from "../../images/shawarma.jpeg";
 import friedyam from "../../images/friedyam.webp";
+import fried from "../../images/friedrice.webp";
 
 
 
@@ -30,7 +31,7 @@ const Vendor = () => {
             image: egusi,
             services: [
                 { id: 1, name: "Jollof Rice", price: 7500, quantity: 1, image: jollof },
-                { id: 2, name: "Fried Rice", price: 9000, quantity: 1, image: avatar },
+                { id: 2, name: "Fried Rice", price: 9000, quantity: 1, image: fried },
                 { id: 3, name: "Egusi Soup", price: 11250, quantity: 1, image: egusi },
                 { id: 4, name: "Afang Soup", price: 11250, quantity: 1, image: afang },
                 { id: 5, name: "Ofada Rice", price: 11250, quantity: 1, image: ofada },
@@ -90,7 +91,7 @@ const Vendor = () => {
             image: egusi,
             services: [
                 { id: 1, name: "Jollof Rice", price: 7500, quantity: 1, image: jollof },
-                { id: 2, name: "Fried Rice", price: 9000, quantity: 1, image: avatar },
+                { id: 2, name: "Fried Rice", price: 9000, quantity: 1, image: fried },
                 { id: 3, name: "Egusi Soup", price: 11250, quantity: 1, image: egusi },
                 { id: 4, name: "Afang Soup", price: 11250, quantity: 1, image: afang },
                 { id: 5, name: "Ofada Rice", price: 11250, quantity: 1, image: ofada },
@@ -112,7 +113,7 @@ const Vendor = () => {
     };
 
     const handleViewCart = () => {
-        navigate("/uniben-foodie/cart", { state: { cart } });
+        navigate("/cart", { state: { cart } });
     };
 
     return (

@@ -7,9 +7,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Redirect to the website
-    navigate('/uniben-foodie/home'); // Replace '/website' with the actual route of your website's homepage
+    e.preventDefault();  
+    navigate('/home');
   };
 
   return (

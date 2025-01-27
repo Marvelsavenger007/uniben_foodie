@@ -55,7 +55,7 @@ const Home = () => {
     };
 
     const handleViewCart = () => {
-        navigate("/uniben-foodie/cart", {
+        navigate("/cart", {
             state: { cart: cartItems },
         });
     };
